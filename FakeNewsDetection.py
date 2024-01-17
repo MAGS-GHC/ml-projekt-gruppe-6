@@ -64,7 +64,7 @@ training_labels = labels[split:training_size]
 
 
 embeddings_index = {} 
-with open('glove.6B.50d.txt') as f: 
+with open('glove.6B.50d.txt',encoding="utf8") as f: 
 	for line in f: 
 		values = line.split() 
 		word = values[0] 
